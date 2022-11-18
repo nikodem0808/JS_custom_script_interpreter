@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Default';
+    src: url('fonts/NotoSansMono.ttf');
+}
+@font-face {
+    font-family: 'Thin';
+    src: url('fonts/NotoSansMono-Thin.ttf');
+}
+@font-face {
+    font-family: 'Slim';
+    src: url('fonts/Raleway.ttf');
+}
+@font-face {
+    font-family: 'Doodle';
+    src: url('fonts/AmaticSC.ttf');
+}
+@font-face {
+    font-family: 'Tek';
+    src: url('fonts/Teko.ttf');
+}
+@font-face {
+    font-family: 'Handwritten';
+    src: url('fonts/DancingScript.ttf');
+}
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('fonts/Inconsolata.ttf');
+}
+@font-face {
+    font-family: 'Plex';
+    src: url('fonts/IBMPlexMono.ttf');
+}
+@font-face {
+    font-family: 'Project3D';
+    src: url('fonts/Nabla.ttf');
+}
+@font-face {
+    font-family: 'Orbit';
+    src: url('fonts/Orbitron.ttf');
+}
+@font-face {
+    font-family: 'Noon';
+    src: url('fonts/Smokum.ttf');
+}
+@font-face {
+    font-family: 'Space';
+    src: url('fonts/Space.ttf');
+}
+@font-face {
+    font-family: 'Source';
+    src: url('fonts/Source_Code_Pro.ttf');
+}
+@font-face {
+    font-family: '8-BIT';
+    src: url('fonts/PressStart2P.ttf');
+}
+@font-face {
+    font-family: 'Slick';
+    src: url('fonts/MPLUS1p.ttf');
+}
+/**/
+textarea{
+    width: 1200px;
+    height: 900px;
+    resize: none;
+    background-color: #292929;
+    color: lightgray;
+    font-family: 'Default';
+    font-size: 14px;
+    overflow-wrap: normal;
+}
+body{
+    background-color: black;
+}
+input{
+    margin-left: 10px;
+    position: fixed;
+    float: right;
+}
+select{
+    margin-left: 10px;
+    top: 2.5rem;
+    position: fixed;
+    float: right;
+    background-color: black;
+    color: white;
+}
+option{
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    border-top: 0;
+    transition: box-shadow 0s, color 0s;
+}
+option:hover{
+    box-shadow: 7px, 7px, 6px, 6px, #f0f0f0, inset;
+    color: blue;
+}
