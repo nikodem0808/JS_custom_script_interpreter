@@ -30,15 +30,16 @@ var opf, kws; // initialized on import
 const delimiters = [' ', '\n'];
 const EXPRESSION_SEPARATOR = ';';
 
+/*
 import('./keywords.js').then((x) => {
     kws = x.kws;
 });
 import('./ops.js').then((x) => {
     opf = x.opf;
     window.addEventListener("keydown", handleClick);
-});
+}); CORS?? */
 
-var keywords = ['BLTIN', 'new'];
+var keywords = ['if', 'new'];
 //
 
 function isAlpha(x)
@@ -329,6 +330,7 @@ function handleClick(e)
     if (e.key != "Alt") return;
     read = inp.value;
     console.log("RAW\n", read, '\n-----'); // DEBUG
+    evalExp(read); return; // DEBUG
     conv = read.split(EXPRESSION_SEPARATOR);
     for (var i in conv)
     {

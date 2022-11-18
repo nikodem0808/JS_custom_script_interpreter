@@ -835,7 +835,7 @@ opf['?'] = (tokens, types, j) =>
 
 
 
-export { opf };
+// export { opf }; // CORS??
 
 /*
 const operators = [
