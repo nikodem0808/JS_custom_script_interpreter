@@ -26,7 +26,8 @@ const precedence_groups = [
     ['||'],
     ['=', '%=', '+=', '-=', '//=', '/=', '**=', '*=', '^=', '|=', '&=', '>>=', '<<=', '?=']
 ];
-var opf, kws; // initialized on import
+var functions = [];
+var opf, kws; // initialized on import // CORS??
 const delimiters = [' ', '\n'];
 const EXPRESSION_SEPARATOR = ';';
 
@@ -321,6 +322,11 @@ function evalExp(x)
     var types = result.parsed_types;
     //
     return evalParsed(tokens, types);
+}
+
+function evalFn(x)
+{
+    ;
 }
 //
 
