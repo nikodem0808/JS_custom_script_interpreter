@@ -26,21 +26,19 @@ const precedence_groups = [
     ['||'],
     ['=', '%=', '+=', '-=', '//=', '/=', '**=', '*=', '^=', '|=', '&=', '>>=', '<<=', '?=']
 ];
-var functions = [];
-var opf, kws; // initialized on import // CORS??
+var opf, kws; // initialized on import
 const delimiters = [' ', '\n'];
 const EXPRESSION_SEPARATOR = ';';
 
-/*
 import('./keywords.js').then((x) => {
     kws = x.kws;
 });
 import('./ops.js').then((x) => {
     opf = x.opf;
     window.addEventListener("keydown", handleClick);
-}); CORS?? */
+});
 
-var keywords = ['if', 'new'];
+var keywords = ['BLTIN', 'new'];
 //
 
 function isAlpha(x)
@@ -323,11 +321,6 @@ function evalExp(x)
     //
     return evalParsed(tokens, types);
 }
-
-function evalFn(x)
-{
-    ;
-}
 //
 
 function handleClick(e)
@@ -336,7 +329,6 @@ function handleClick(e)
     if (e.key != "Alt") return;
     read = inp.value;
     console.log("RAW\n", read, '\n-----'); // DEBUG
-    evalExp(read); return; // DEBUG
     conv = read.split(EXPRESSION_SEPARATOR);
     for (var i in conv)
     {
